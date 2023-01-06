@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: 0.50rem;
+    
+}
+
+
+html::-webkit-scrollbar-thumb{
+    background: rgb(32, 32, 31);
+    border-radius: 1.50rem;
+}
+
+.loader-con{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+   
+
+}
+.loader{
+    width: 150px;
+    height: 150px;
+    animation: loader 2.2s linear infinite;
+}
+@keyframes loader{
+    100%{
+        transform:  rotateY(360deg);
+    }
+}
+.loader img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+body{
+    background: rgb(56, 56, 56);
+    overflow: hidden;
+}
+.head{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: black;
+    z-index: 1;
+    transition: .5s;
+
+}
+.menu{
+    display: none;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    transition-delay: 2.25s;
+}
+.hide{
+    
+    transform: translateY(-9rem);
+}
+.logo-con{
+ 
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.head .logo{
+    height: 100px;
+    transition-delay: 2.25s;
+   
+}
+.logo img{
+    height: 100%;
+    transition: 2s;
+}
+
+.logo img:hover{
+    transform: rotate(360deg);
+  }
+
+
+.navbar-list{
+    transition-delay: 2.25s;
+}
+
+
+.nav1{
+    transition-delay: 2.25s;
+}
+.nav2{
+    transition-delay: 2.40s;
+   
+}
+.nav3{
+    transition-delay: 2.45s;
+}
+.nav4{
+    transition-delay: 2.50s;
+}
+
+
+.navbar-list a{
+    text-decoration: none;
+    font-family:  "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    color: rgb(255, 255, 255);
+    padding: 20px 0px;
+    font-weight: 600;
+    font-size: 17px;
+    padding: 15px;
+ 
+
+}
+.navbar-list a:hover{
+    color: rgb(212, 245, 225);
+ 
+
+}
+
+.logo:hover{
+
+    color: rgb(212, 245, 225);
+
+}
+
+.navbar-social{
+    transition-delay: 2.5s;
+}
+
+.logo{
+    font-size: 30px;
+    padding: 15px;
+    color: white;
+    
+}
+#log1{
+    transition-delay: 2.25s;
+}
+#log2{
+    transition-delay: 2.40s;
+}
+#log3{
+    transition-delay: 2.45s;
+}
+#log4{
+    transition-delay: 2.50s;
+}
+
+.header2{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background: rgb(39, 36, 36);
+    z-index: 1;
+    height: 100vh;
+    width: 70%;
+    transition: 1s;
+   
+}
+.header-con{
+  padding: 100px 0px;
+  height: 100vh;
+}
+.navbar-list2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  
+}
+.navbar-social2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-list2 a{
+    text-decoration: none;
+    font-family:  "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    color: rgb(255, 255, 255);
+    padding: 20px 0px;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 15px;
+}
+.logo2{
+    font-size: 40px;
+    padding: 15px;
+    color: white;
+}
+
+
+.close{
+    color: white;
+    font-size: 50px;
+    padding: 20px;
+  
+}
+/*---------------------------HOME----------------------------*/
+.home{
+    background: black;
+}
+
+.home .container{
+    padding: 0px 20px;
+  
+}
+
+
+
+.home-left{
+   
+    background: rgb(5, 5, 5);
+    height: 90vh;
+    padding: 300px  0px;
+ 
+}
+
+.home-left p{
+    font-family:  "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    color: rgb(212, 245, 225);
+    font-size: 25px;
+    transition-delay: 3s;
+    padding: 10px 0px;
+      
+  }
+   .para p{
+ 
+    color: rgb(133, 255, 19);
+    padding: 20px 0px;
+    font-weight: 600;
+    font-size: 17px;
+    transition-delay: 3.59s;
+  }
+
+.home-left h1{
+    font-family: 'Hind', sans-serif;
+    color: rgb(14, 245, 110);
+    font-size: 60px;
+    transition-delay: 3.25s;
+    
+    
+}
+.home-left h2{
+    font-family: 'Hind', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    transition-delay: 3.45s;
+}
+
+.home img{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 80%;
+    height: 50%;
+    object-fit: cover;
+}
+/*---------------------------ABOUT ME-------------------------------------*/
+
+
+.about{
+    padding: 200px 0px;
+    background: rgb(56, 56, 56);
+    transition: .5s ease;
+   
+}
+ .container{
+    margin: 0px 150px;
+    
+}
+.cards{
+    display: flex;
+}
+.front-card{
+    width: 50%;
+    transform-style: preserve-3d;
+    transition-delay: 0.10s;
+}
+.box{
+   
+    position: absolute;
+    transform: rotateX(101deg);
+    background: rgb(26, 25, 25);
+    filter: blur(50px);
+    width: 200px;
+    height: 300px;
+    box-shadow: 0 0 120px rgb(0, 0, 0),
+    0 0 200px rgba(0, 0, 0, 0.4),
+    0 0 300px rgba(0, 0, 0, 0.6),
+    0 0 400px rgba(0, 0, 0, 0.8),
+    0 0 500px rgb(0, 0, 0);
+}
+
+.front{
+    position: absolute;
+    left: 0; 
+}
+#cards{
+    animation: animate 4s linear infinite;
+   
+  
+
+}
+
+@keyframes animate{
+  
+    100%{
+        transform:  rotateY(360deg) rotate(-360deg);
+    }
+  
+}
+
+.about-me{
+
+    position: relative;
+    width: 60%;
+    border: 5px solid rgb(123, 255, 0);
+    background: black;
+    padding: 20px;
+    border-radius: 20px;
+    height: 51vh;
+    transition-delay: 0.10s;
+}
+.about-me p{
+    padding: 100px 0px;
+    font-family:  "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.skills{
+    display: none;
+    width: 60%;
+    border: 5px solid rgb(123, 255, 0);
+    background: black;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    height: 51vh;
+    
+}
+.skills h1{
+    color: rgb(255, 255, 255);
+    font-family:  "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    padding: 15px 0px;
+
+}
+.skills p{
+    color: rgb(255, 255, 255);
+    font-family:  "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 15px;
+
+}
+.skills p:hover{
+    background: white;
+    color: black;
+
+}
+.backs{
+    font-size: 50px;
+    color: white;
+    padding: 10px 0px;  
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+
+}
+.forward{
+    font-size: 50px;
+    color: white;
+    padding: 10px 0px;  
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+}
+/*-----------------------------PROJECTS---------------------------------*/
+.projects{
+    padding: 200px 0px;
+     
+}
+
+.pro h1{
+    font-family: 'Hind', sans-serif;
+  
+    color: rgb(14, 245, 110);
+    font-size: 60px;
+    text-align: center;
+    padding: 50px 0px;
+
+}
+.web1{  
+    width: 700px;
+    padding: 10px;
+
+}
+.web1 img{
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px rgb(0 0 0 / 100%);
+    width: 100%;
+}
+.web2{  
+    width: 700px;
+    padding: 10px;
+   
+}
+.web2 img{
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px rgb(0 0 0 / 100%);
+    width: 100%;
+}
+.web2 #zoom img{
+    width: 100%;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+    
+ }
+ .web2  #zoom:hover img{
+    transform: scale(1.1);
+    opacity: 0.5
+    
+    
+ 
+    
+ }
+
+ .web1 #zoom img{
+    width: 100%;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+   
+ }
+ .web1 #zoom:hover img{
+    transform: scale(1.1);
+    opacity: 0.5;
+ }
+ figure{
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px rgb(0 0 0 / 70%);
+  
+}
+.con{
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+
+}
+
+/*-----------------------GET---------------------------*/
+
+.get{
+    padding: 150px 0px;
+    background: rgb(31, 30, 30);
+    
+}
+.get-in h1{
+    font-family: 'Hind', sans-serif; 
+    color: rgb(14, 245, 110);
+    font-size: 60px;
+}
+.get-in p{
+    width: 50%;
+    padding: 30px 0px;
+    font-family:  "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+.button-get .btn{
+    padding: 20px 40px;
+    font-family:  "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    color: rgb(212, 245, 225);
+    color: black;
+    font-size: 30px;
+    transition: 0.50s ease;
+
+}
+.button-get .btn:hover{
+    padding: 20px 40px;
+    font-family:  "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    background:  rgb(43, 44, 41);
+    color:  rgb(98, 255, 7);
+    font-size: 30px;
+
+}
+
+@media (max-width: 1560px){
+    .about-me p{
+      padding: 0;
+    }
+  }
+  
+  @media (max-width: 1354px){
+    .cards{
+       flex-direction: column;
+       gap: 300px;
+       align-items: center;
+
+    }
+    .about-me{
+        width: 100%;
+    }
+    .front-card{
+       
+        width: 20%;
+       
+          
+       }
+    .skills{
+        width: 100%;
+       
+    }
+    .container{
+        padding: 0px 20px;
+        margin: 0;
+    }
+  
+   
+    }
+  
+    
+    @media (max-width: 985px){
+        
+        .home-left{
+            padding: 200px 0px;
+        }
+        .menu{
+            display: block;
+        }
+        .navbar-list{
+            display: none;
+          }
+          .navbar-social{
+            display: none;
+          }
+          .con{
+            flex-direction: column;
+            width: 100%;
+            padding: 0;
+          }
+       
+           
+          .web1{
+            width: 100%;
+          }
+          .web2{
+            width: 100%;
+          }
+          .get-in p{
+            width: 100%;
+          }
+       
+        }
+
+        @media (max-width: 673px){
+            .front-card{
+                width: 30%;
+               }
+           
+            }
+      
+            @media (max-width: 613px){
+                .home-left{
+                    padding: 130px 0px;
+                    height: 100vh;
+                }
+           
+            .about-me{
+                height: 100%;
+                
+            }
+               
+                }
+                
+              
+          @media (max-width: 555px){
+            .front-card{
+                width: 80%;
+               }
+            }
+
+
+            @media (max-height: 700px){
+            .home-left{
+                padding: 100px 0px;
+            }
+            .home-left h1{ 
+                font-size: 50px;
+            }
+            .home-left h2{
+                font-size: 45px;
+            }
+
+            }
