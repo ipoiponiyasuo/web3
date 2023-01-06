@@ -166,7 +166,7 @@ body{
     height: 100vh;
     width: 70%;
     transition: 1s;
-   
+   overflow: auto;
 }
 .header-con{
   padding: 100px 0px;
@@ -591,6 +591,18 @@ body{
             .front-card{
                 width: 80%;
                }
+               .home-left h1{
+                font-size: 49px;
+                
+               }
+
+               .home-left h2{
+                font-size: 39px;
+                
+               }
+               .header-con{
+                padding: 20px 0px;
+               }
             }
            
             @media (max-height: 794px){
@@ -601,6 +613,7 @@ body{
                 .about-me{
                     height: 700px;
                 }
+                
     
                 }
 
@@ -608,15 +621,12 @@ body{
 
 
             @media (max-height: 700px){
-            .home-left{
-                padding: 100px 0px;
-            }
-            .home-left h1{ 
-                font-size: 50px;
-            }
-            .home-left h2{
-                font-size: 45px;
-            }
+                .home-left{
+                    padding: 100px 0px;
+                    height: 100%;
+                }
+             
+
 
             .skills{
                 height: 500px;
