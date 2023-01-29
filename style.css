@@ -161,7 +161,7 @@ body{
     position: fixed;
     top: 0;
     right: -100%;
-    color: black;
+    background: rgb(39, 36, 36);
     z-index: 1;
     height: 100vh;
     width: 70%;
@@ -222,7 +222,7 @@ body{
 
 .home-left{
    
-    color: black;
+    background: black;
     height: 90vh;
     padding: 300px  0px;
  
@@ -248,7 +248,7 @@ body{
 .home-left h1{
     font-family: 'Hind', sans-serif;
     color: rgb(14, 245, 110);
-    font-size: 65px;
+    font-size: 70px;
     transition-delay: 3.25s;
     
     
@@ -570,28 +570,7 @@ body{
             .front-card{
                 width: 30%;
                }
-               .get-in h1{
-               
-                font-size: 45px;
-               
-            }
-               .get-in p{
-               
-                font-size: 17px;
-               
-            }
-            .button-get .btn{
-                padding: 20px 40px;
-                font-size: 17px;
-                transition: 0.50s ease;
-            
-            }
-            .button-get .btn:hover{
-                padding: 20px 40px;
-                font-size: 17px;
-                transition: 0.50s ease;
-            
-            }
+           
             }
       
             @media (max-width: 613px){
@@ -624,8 +603,36 @@ body{
                .header-con{
                 padding: 20px 0px;
                }
+
+               .get-in h1{
+                font-family: 'Hind', sans-serif; 
+                color: rgb(14, 245, 110);
+                font-size: 50px;
+            }
+            .get-in p{
+                
+                padding: 30px 0px;
+                font-family:  "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+                color: rgb(255, 255, 255);
+                font-size: 20px;
+                letter-spacing: 2px;
+
+            }
+            .button-get .btn{
+                padding: 20px 40px;
+                font-size: 20px;
+            
+            }
+            .button-get .btn:hover{
+                padding: 20px 40px;
+                font-size: 20px;
+            
+            }
+            
             }
            
+            
+          
             @media (max-height: 794px){
          
                 .skills{
@@ -639,26 +646,37 @@ body{
                 }
 
 
-                @media (max-height: 775px){
+              
+                @media (max-height: 851px){
                     .home-left{
-                        padding: 250px 0px;
-                        height: 100%;
+                    padding: 200px 0px;
+                    height: 100%;
+                        
+                    }
+                  
+                }
+          
+            
+                @media (max-height: 851px) and (max-width: 700px){
+                    .home-left{
+                    padding: 100px 0px;
+                    height: 100%;
+                        
+                    }
+                  
+                    .skills{
+                        height: 500px;
                     }
                 }
-                    @media (max-height: 650px){
-                        .home-left{
-                            padding: 100px 0px;
-                            height: 100%;
-                        }
-                         
+            
+              
+            
 
 
-            .skills{
-                height: 500px;
-            }
+              
+            
 
-            }
-
+        
               
             @media (max-height: 794px){
          
