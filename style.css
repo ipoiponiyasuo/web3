@@ -231,7 +231,7 @@ body{
 .home-left p{
     font-family:  "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
     color: rgb(212, 245, 225);
-    font-size: 27px;
+    font-size: 20px;
     transition-delay: 3s;
     padding: 10px 0px;
       
@@ -241,14 +241,14 @@ body{
     color: rgb(133, 255, 19);
     padding: 20px 0px;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 17px;
     transition-delay: 3.59s;
   }
 
 .home-left h1{
     font-family: 'Hind', sans-serif;
     color: rgb(14, 245, 110);
-    font-size: 70px;
+    font-size: 63px;
     transition-delay: 3.25s;
     
     
@@ -256,7 +256,7 @@ body{
 .home-left h2{
     font-family: 'Hind', sans-serif;
     color: rgb(255, 255, 255);
-    font-size: 55px;
+    font-size: 50px;
     transition-delay: 3.45s;
 }
 
